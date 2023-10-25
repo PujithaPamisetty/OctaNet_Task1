@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    align-items: center;
+}
+.search-form{
+    width:45rem;
+    height:2rem;
+    border:var(--border);
+    overflow: hidden;
+    background:#fff;
+    display:flex;
+    align-items: center;
+    border-radius: 0.2rem;
+}
+.search-form input{
+    font-size: 1.3rem;
+    padding:0 1rem;
+    text-align: center;
+    height:100%;
+    width:100%;
+    text-transform: none;
+    color:var(--black);
+}
+.search-form label{
+    font-size: 1.5rem;
+    padding-right:1.5rem;
+    color:var(--black);
+    cursor: pointer;
+}
+.search-form label:hover{
+    color:var(--green);
+}
+.icons a{
+    font-size: 1rem;
+    margin-left: 1rem;
+    color:var(--black);
+    cursor: pointer;
+
+}
+.logo img{
+    max-width: 50px;
+    height: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color:var(--black);
+}
+.nav-menu ul{
+ display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.nav-menu li:last-child{
+    margin-right: 0;
+}
+.nav-menu a{
+    text-decoration: none;
+    font-family:"Arial";
+    font-size: 1.3rem;
+    color: #333;
+    transition: all ease 0.3s;
+}
+.nav-menu a:hover{
+    color: rgb(67, 210, 203);
+}
+
+.hero{
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+}
+.hero-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.hero-content{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.hero-content h1{
+    font-family:'Times New Roman';
+    font-size: 3rem;
+}
+.hero-content p{
+    font-family: "Times New Roman";
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(67, 210, 203);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Arial";
+    font-size: 1.5rem;
+    transition: all ease 0.3s;
+}
+.hero-button:hover{
+    background-color: #333;
+}
+.destinations{
+    font-size: 1.3rem;
+    font-family: "Arial";
+    margin: 40px 80px;
+    text-align: center;
+}
+.destinations h2{
+    margin-bottom: 40px;
+}
+.destination-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.destination-item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.destination-item{
+    text-align: left;
+}
+.destination-item h3{
+    font-size: 1.2rem;
+}
+.destination-item p{
+    font-size: 0.9rem;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    line-height: 1;
+    font-family: "Arial";
+}
+/* styles.css */
+
+/* Style for the CTA button */
+.cta-button {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: orange; /* Change this to your desired button background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove default underline on links */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Change this to the color you want on hover */
+}
+
+/* You can adjust the padding, colors, and other properties as needed to match your website's design. */
+
+.contact{
+    padding: 20px;
+    text-align: center;
+    background-image: url(image10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact h3{
+    font-family: "Times New Roman";
+    font-size: 2rem;
+}
+.contact-info p{
+    font-family: "Arial";
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.contact-info ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+} 
+.contact-info li{
+    margin: 0 10px;
+    font-family: "Arial";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  
+}
+.contact-info li a{
+    text-decoration: none;
+    font-family: "Arial";
+    color: black;
+}
+.contact-info i{
+    font-size: 10px;
+    margin-right: 10px;
+}
+.form{
+    width: 100%;
+}
+input,textarea{
+    width: 70%;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Arial";
+}
+textarea{
+    height: 200px;
+}
+.form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color:rgb(50, 162, 99) ;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Arial";
+    font-size: 1rem;
+    border: none;
+    transition: all ease 0.3s;
+}
+.form button:hover{
+    background-color: #333;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.social-icons a{
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+}
+footer p{
+    font-family: "Arial";
+    font-size: 1rem;
+}
+@media (max-width: 1177px) {
+    .hero-content h1{
+        line-height: 0.7;
+    }
+    .hero-content p{
+        margin-top: 0;
+        line-height: 0.8;
+    }
+    .destinations img{
+        height: 250px;
+    }
+    input, textarea{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content h1{
+        margin-bottom: 5px;
+    }
+    .team-member img{
+        width: 200px;
+        height: 200px;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+}
+@media (max-width:603px){
+    .hero-content h1{
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:430px){
+    header{
+        display: none;
+    }
+    .hero-content h1{
+        font-size: 1.3rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
+    }
+    .hero-button{
+        padding: 6px 22px;
+        font-size: 16px;
+    }
+    .destinations{
+        font-size: 1.5rem;
+    }
+    .destination-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+    .team-member img{
+        width: 250px;
+        height: 250px;
+    }
+}
+  
